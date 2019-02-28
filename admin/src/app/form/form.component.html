@@ -1,0 +1,116 @@
+<div style="background-color:black;height: 90%" class="logo">
+  
+      <h1 style="text-align: center;color: darkgray">We@ther Admin P@nel</h1>
+  
+</div>
+<div class=" sidebar" role="navigation">
+      <div class="navbar-collapse">
+          <nav style="background-color: rgb(20, 20, 20); width:200px; height: 100%;padding-top: 20px;overflow-x: hidden;position: fixed;" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+              <ul style="list-style-type:none;">
+              <li>
+              <a style="text-decoration: none;display: block;font-size: 20px;margin-left: -20px;" routerLink="/home" routerLinkActive="active"><img src="assets/1.png" width="20" height="20">&nbsp;&nbsp;&nbsp;Dashboard</a>
+              </li><br>
+                  <li>
+              <a style="text-decoration: none;display: block;font-size: 20px;margin-left: -20px;" routerLink="/form" routerLinkActive="active"><img src="assets/2.jpg" width="20" height="20">&nbsp;&nbsp;&nbsp; Form</a>
+                      <!-- /nav-second-level -->
+                  </li><br>
+                  <li>
+                    <a style="text-decoration: none;display: block;font-size: 20px;margin-left: -20px;" routerLink="/adminlogin" routerLinkActive="active"><img src="assets/log.jpeg" width="20" height="20">&nbsp;&nbsp;&nbsp;Log Out</a>
+                    </li><br>
+              </ul>
+              <div class="clearfix"> </div>
+              <!-- //sidebar-collapse -->
+          </nav>
+      </div>
+  </div>
+  
+  
+  <div style="margin-left: 350px" class="container">
+    <h1>Weather</h1>
+    <hr style="border-top: 3px dashed red;">
+    <br><br>
+    <div class="form-group">    
+        <div class="row">
+        <!-- <div class="col-md-1"></div> -->
+        
+        <div class="col-md-5">
+         <b>Select Country: </b>
+            <select #Country name="Country" class="form-control">
+              <option>Select Country </option>
+              <option value="India">India</option>
+            </select><br><br>
+          <b>Select State: </b>
+            <select #State name="State" class="form-control">
+              <option>Select Country </option>
+              <option value="Rajasthan">Rajasthan</option>
+            </select><br><br>
+          <b>Select City: </b>
+            <select #City name="City" class="form-control">
+              <option>Select City </option>
+              <option value="Ajmer">Ajmer</option>
+              <option value="Alwar">Alwar</option>
+              <option value="Banswara">Banswara</option>
+              <option value="Baran">Baran</option>
+              <option value="Barmer">Barmer</option>
+              <option value="Bharatpur">Bharatpur</option>
+              <option value="Bhilwara">Bhilwara</option>
+              <option value="Bikaner">Bikaner</option>
+              <option value="Bundi">Bundi</option>
+              <option value="Chittorgarh">Chittorgarh</option>
+              <option value="Churu">Churu</option>
+              <option value="Dausa">Dausa</option>
+              <option value="Dholpur">Dholpur</option>
+              <option value="Dungarpur">Dungarpur</option>
+              <option value="Hanumangarh">Hanumangarh</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Jaisalmer">Jaisalmer</option>
+              <option value="Jalore">Jalore</option>
+              <option value="Jhalawar">Jhalawar</option>
+              <option value="Jhunjhunu">Jhunjhunu</option>
+              <option value="Jodhpur">Jodhpur</option>
+              <option value="Karauli">Karauli</option>
+              <option value="Kota">Kota</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Pali">Pali</option>
+              <option value="Pratapgarh">Pratapgarh</option>
+              <option value="Rajsamand">Rajsamand</option>
+              <option value="Sawai Madhopur">Sawai Madhopur</option>
+              <option value="Sikar">Sikar</option>
+              <option value="Sirohi">Sirohi</option>
+              <option value="Sri Ganganagar">Sri Ganganagar</option>
+              <option value="Tonk">Tonk</option>
+              <option value="Udaipur">Udaipur</option>
+            </select> <br><br> 
+            <b>Temperature Sheet: </b>
+                <label id="lbl"> </label>
+                <input type='file' (change)="fileChanged($event)">
+               
+                <br><br>
+    
+      <b>Date: </b>
+      <input #Date type="date" name="DOR" class="form-control" placeholder="DD/MM/YYYY" > <br><br>             
+      
+
+
+      <b>Weather</b>
+      <select #Weather name="City" class="form-control">
+        <option>Select Weather </option>
+        <option value="Cloudy">Cloudy</option>
+        <option value="Rainy">Rainy</option>
+        <option value="Sunny">Sunny</option>
+        <option value="Haze">Haze</option>
+</select> <br><br>
+<b>Wind: </b>
+      <input #Wind type="text"  class="form-control" placeholder="Wind" > <br><br>
+
+      <b>Humidity: </b>
+      <input #Humidity type="text"  class="form-control" placeholder="Humidity" > <br><br>
+      
+      <button  type="btn" (click)="submit(Country.value,State.value,City.value,Date.value,Weather.value,Wind.value,Humidity.value)">Submit</button></div>
+        <!-- <button type="btn" (click)=" fileChanged()"> -->
+    </div>
+    </div>
+  </div>
+  
+      
+

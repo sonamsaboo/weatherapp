@@ -1,0 +1,44 @@
+#gr{
+	background: linear-gradient(270deg, #0f0f0e, #f9f5f1);
+background-size: 400% 400%;
+width: 100%;
+height: 100%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+-moz-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+	
+}
+
+img.animated-gif{
+	width: 100%;
+	height: 250px;
+  }
+  #drop{
+      width: 5px;
+      height: 5px;
+      margin-left: 70px;
+      display: block;
+
+  }
+  #arrow{
+    
+    width: 30px;
+    height: 30px;
+}

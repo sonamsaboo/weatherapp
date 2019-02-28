@@ -1,0 +1,28 @@
+
+ <body style="background-image:'../../assets/images/1.jpg'">
+
+	<div style="width: 100%;">
+		
+        <h2 id="align">Registration Info</h2>
+		<form method="post">    
+           
+                    <input type="text" required class="name" placeholder="UserName" #username>
+                    <input type="password" class ="name" placeholder="Password" #password >
+                      
+                      <div>
+                      <select class="name" style="width: 85%;height:35px;" name="gender" #gender>
+                            <option disabled="disabled" selected="selected">Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select> </div><br>
+                        <input class="name" type="text" placeholder="Location" #location>
+
+            <a routerLink="/home" routerLinkActive="active">Login Here!</a>
+			<div class="clear"></div><br><br>
+			<button style="margin-left: 25%;height:30px;" type="button" (click)="add(username,password,gender,location)">Register Me</button>&nbsp;&nbsp;
+        <h1>{{q}}</h1>
+        </form>
+	</div>
+</body>  
+

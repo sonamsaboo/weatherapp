@@ -1,0 +1,14 @@
+<body style="background-image:'../../assets/images/1.jpg'">
+
+	<div style="width: 100%;">
+		
+        <h2 id="align">Sign In</h2>
+		<form method="post">
+			<input type="text" class="name" placeholder="Username" required="required" #username>
+			
+            <a routerLink="/register" routerLinkActive="active">New User? Register Here!</a>
+			<div class="clear"></div><br><br>
+			<input style="margin-left: 25%;" type="button" (click)="submit(username.value)" value="Let Me In">
+		</form>
+	</div>
+</body>

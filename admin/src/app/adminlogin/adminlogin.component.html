@@ -1,0 +1,31 @@
+<!-- <div  style="margin-left: 40px; margin-top: 10%;" >
+  <h1 style="margin-left: 40%; margin-top: -10%;">Admin Panel</h1><br>
+  <div>
+  <img style="height: 40px; width: 40px;margin-left: 48%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lhe5pawFQot77VS56FhiQYIKqoZMRZ4vO8Oatg1f46fMJArMdw">
+</div>
+
+<div class="login">
+  <form (submit)="loginUser($event)">
+    <input type="text"  placeholder="Username" required="required" #username />
+    <input type="password" placeholder="Password" required="required" #password />
+    <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+    </form>
+</div>
+</div> -->
+
+<div class="login_form">
+      <form (submit)="loginUser($event)">
+       
+        <label for="username">User Name</label>
+        <input type="text"  placeholder="Username" required="required" #username />
+        
+        <label for="password">Password</label>
+        <input type="password" placeholder="*******" required="required" #password />
+        <div class="hide-show">
+          <span>Show</span>
+        </div>
+        <button type="submit">Sign In</button>
+      </form>
+      
+    
+  </div>
